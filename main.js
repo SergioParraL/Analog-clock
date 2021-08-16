@@ -6,7 +6,7 @@ function time () {
 	const now = new Date()
 	const p = document.querySelector('#hour')
 	p.classList.add('hourJS')
-	p.innerHTML = now.toUTCString()
+	p.innerHTML = now
 	const second = now.getSeconds()
 	const secondDegrees = ((second / 60 ) * 360) + 90
 	$secondPointer.style.transform = `rotate(${secondDegrees}deg)`
