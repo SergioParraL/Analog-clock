@@ -1,0 +1,82 @@
+body{
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	font-family: Poppins;
+}
+
+.wrapper{
+	display: flex;
+	justify-content: space-evenly;
+	margin: auto;
+	width:15em;
+	height: 15em;
+	border: 10px solid white;
+	border-radius: 50%;
+}
+.clock{
+	width: 13em;
+	height: 13em;
+	margin: 6%;
+	position: relative;
+	border-radius: 50%;
+}
+
+.pointer{
+	width: 50%;
+	position: absolute;
+	top: 50%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+	transition: all 0.05s;
+	transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+}
+
+.seconds{
+	border: 2px solid red;
+}
+.minutes{
+	border: 2px solid orange;
+}
+.hours{
+	border: 2px solid blue;
+}
+
+.hourJS{
+	border-bottom: 1px solid red;
+	text-align: center;
+}
+
+.legend{
+	margin-top: 1em;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	border-radius: 0;
+	border: none;
+}
+
+.legend div{
+	text-align: center;
+}
+
+ul{
+	list-style-type: square;
+	padding: 0;
+}
+.color{
+	height: 2rem;
+	margin-top: .5em;
+}
+.color:nth-child(1){
+	color: blue;
+
+}
+.color:nth-child(2){
+	color: orange;
+
+}
+.color:nth-child(3){
+	color: red;
+
+}
