@@ -8,11 +8,15 @@ body{
 .wrapper{
 	display: flex;
 	justify-content: space-evenly;
-	margin: auto;
+	margin: 7vh auto;
 	width:15em;
 	height: 15em;
 	border: 10px solid white;
 	border-radius: 50%;
+}
+
+.wrapper:{
+	margin-top: 7vh;
 }
 .clock{
 	width: 13em;
